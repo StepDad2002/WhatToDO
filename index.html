@@ -4,9 +4,59 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>What to DO</title>
 </head>
 <body>
-
+<div class="wrapper">
+    <div class="container">
+        <div class="head">
+            <header class="header">
+                <div class="header--body">
+                    <div class="header--menuImg">
+                        <img src="img/menu.svg" alt="Menu">
+                    </div>
+                    <div class="header--username">MISHA</div>
+                </div>
+                <div class="newTask">
+                    <div class="newTask--body">
+                        <button class="newTask--btn" type="button">+</button>
+                        <div class="newTask--text">Add new Task</div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <main class="tasks">
+           <div class="tasks--todo todo">
+               <div class="tasks--header">TO DO</div>
+               <div class="todo--body">
+                   <div class="todo--task task">
+                       <div class="task--body">
+                           <input type="checkbox" name="isDone" class="task--status">
+                           <div class="task--content">Pick up mail</div>
+                           <div class="task--date">Due today</div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+            <div class="tasks--completed completed">
+                <div class="tasks--header">COMPLETED</div>
+                <div class="completed--body task-completed">
+                    <div class="completed--task task task-completed">
+                        <div class="task--body task-completed">
+                            <input type="checkbox" name="isDone" class="task--status task-completed" checked>
+                            <div class="task--content task-completed">Pick up mail</div>
+                            <div class="task--date task-completed">Due today</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="foot">
+            <div class="foot--text">All rights reserved</div>
+        </footer>
+    </div>
+</div>
+<script src="index.js"></script>
 </body>
 </html>

@@ -1,0 +1,169 @@
+$UltraViolet: #4d4e73;
+$PaynesGray: #5f6c90;
+$CarolinaBlue: #79b5db;
+$BabyBlue: #8ecced;
+$Platinum: #d3d9db;
+$SilverLakeBlue: #678bad;
+$SpaceCadet:  #282851;
+$FrenchGray: #abadba;
+$White: #ffffff;
+$Black: #000;
+  
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.wrapper {
+  background-color: #8ECCED;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: $UltraViolet;
+  min-width: 20%;
+  max-width: 100%;
+  width: 60%;
+}
+
+.head {
+  
+  border: maroon solid 2px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  &--body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--menuImg {
+   margin: 15px 0 0 15px;
+    background-color: $PaynesGray;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    
+    img{
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      object-fit: fill;
+      width: 40px;
+      height: 40px;
+    }
+    
+  }
+
+  &--username {
+    font-size: 30px;
+    line-height: 12px;
+    color: gray;
+    margin: 30px 20px 0 0;
+  }
+
+  &--username:before{
+    content: '○';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    color: greenyellow;
+  }
+}
+
+.newTask {
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  
+  &--body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: center;
+    line-height: 30px;
+    background-color: $SpaceCadet;
+    flex-basis: 400px;
+    height: 60px;
+    border-radius: 30px;
+    padding: 15px 20px;
+  }
+
+  &--btn {
+    flex-basis: 30px;
+    border-radius: 20px;
+    background-color: greenyellow;
+  }
+
+  &--text {
+    font-size: 22px;
+    color: $FrenchGray;
+  }
+}
+
+.tasks {
+  &--todo {
+  }
+
+  &--header {
+  }
+
+  &--completed {
+  }
+}
+
+.todo {
+  &--body {
+  }
+
+  &--task {
+  }
+}
+
+.task {
+  &-completed {
+  }
+
+  &--body {
+  }
+
+  &--status {
+  }
+
+  &--content {
+  }
+
+  &--date {
+  }
+}
+
+.completed {
+  &--body {
+  }
+
+  &--task {
+  }
+}
+
+.foot {
+  &--text {
+  }
+}
