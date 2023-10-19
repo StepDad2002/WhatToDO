@@ -27,7 +27,7 @@
             </header>
         </div>
         <main class="tasks">
-           <div class="tasks--todo todo">
+           <div class="todo">
                <div class="tasks--header">TO DO</div>
                <div class="todo--body">
                    <div class="todo--task task">
@@ -37,16 +37,30 @@
                            <div class="task--date">Due today</div>
                        </div>
                    </div>
+                   <div class="todo--task task">
+                       <div class="task--body">
+                           <input type="checkbox" name="isDone" class="task--status">
+                           <div class="task--content">Pick up mail</div>
+                           <div class="task--date">Due today</div>
+                       </div>
+                   </div>
                </div>
            </div>
-            <div class="tasks--completed completed">
+            <div class="completed">
                 <div class="tasks--header">COMPLETED</div>
-                <div class="completed--body task-completed">
-                    <div class="completed--task task task-completed">
-                        <div class="task--body task-completed">
-                            <input type="checkbox" name="isDone" class="task--status task-completed" checked>
-                            <div class="task--content task-completed">Pick up mail</div>
-                            <div class="task--date task-completed">Due today</div>
+                <div class="completed--body">
+                    <div class="completed--task">
+                        <div class="task--body task--body-completed">
+                            <input type="checkbox" name="isDone" class="task--status task--status-completed" checked>
+                            <div class="task--content task--content-completed">Pick up mail</div>
+                            <div class="task--date task--date-completed">Due today</div>
+                        </div>
+                    </div>
+                    <div class="completed--task">
+                        <div class="task--body task--body-completed">
+                            <input type="checkbox" name="isDone" class="task--status task--status-completed" checked>
+                            <div class="task--content task--content-completed">Pick up mail</div>
+                            <div class="task--date task--date-completed">Due today</div>
                         </div>
                     </div>
                 </div>

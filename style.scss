@@ -8,7 +8,9 @@ $SpaceCadet:  #282851;
 $FrenchGray: #abadba;
 $White: #ffffff;
 $Black: #000;
+$LightGray: #363b74;
   
+@use "sass:color";
 
 * {
   padding: 0;
@@ -42,7 +44,6 @@ $Black: #000;
 
 .head {
   
-  border: maroon solid 2px;
 }
 
 .header {
@@ -93,6 +94,7 @@ $Black: #000;
   display:flex;
   justify-content: center;
   align-content: center;
+  margin: 20px 0 0 0 ;
   
   &--body {
     display: flex;
@@ -101,7 +103,7 @@ $Black: #000;
     align-content: center;
     line-height: 30px;
     background-color: $SpaceCadet;
-    flex-basis: 400px;
+    flex: 0.5 1 200px;
     height: 60px;
     border-radius: 30px;
     padding: 15px 20px;
@@ -120,10 +122,14 @@ $Black: #000;
 }
 
 .tasks {
-  &--todo {
-  }
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 
   &--header {
+    font-size: 20px;
+    color: $FrenchGray;
+    margin: 20px 0 20px 20px;
   }
 
   &--completed {
@@ -131,39 +137,61 @@ $Black: #000;
 }
 
 .todo {
+  
   &--body {
+    
   }
 
   &--task {
+    
   }
 }
 
 .task {
   &-completed {
   }
+  
+  
 
   &--body {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+    background-color: $PaynesGray;
+    border-radius: 10px;
   }
 
   &--status {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: 1px solid #555555;
+    margin: 12px;
+  }
+
+  &--status:checked{
+    background: lightgreen;
   }
 
   &--content {
+    margin: 12px;
   }
 
   &--date {
+    margin: 12px;
+    
+  }
+
+  &--body-completed {
+    display: flex;
+    justify-content: space-between;
+    background-color: $LightGray;
+    border-radius: 10px;
+   
   }
 }
 
-.completed {
-  &--body {
-  }
-
-  &--task {
-  }
-}
-
-.foot {
-  &--text {
-  }
-}

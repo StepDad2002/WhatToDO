@@ -1,0 +1,142 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #8ECCED;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #4d4e73;
+  min-width: 20%;
+  max-width: 100%;
+  width: 60%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header--body {
+  display: flex;
+  justify-content: space-between;
+}
+.header--menuImg {
+  margin: 15px 0 0 15px;
+  background-color: #5f6c90;
+  border-radius: 15px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.header--menuImg img {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  object-fit: fill;
+  width: 40px;
+  height: 40px;
+}
+.header--username {
+  font-size: 30px;
+  line-height: 12px;
+  color: gray;
+  margin: 30px 20px 0 0;
+}
+.header--username:before {
+  content: "○";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  color: greenyellow;
+}
+
+.newTask {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 20px 0 0 0;
+}
+.newTask--body {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-content: center;
+  line-height: 30px;
+  background-color: #282851;
+  flex: 0.5 1 200px;
+  height: 60px;
+  border-radius: 30px;
+  padding: 15px 20px;
+}
+.newTask--btn {
+  flex-basis: 30px;
+  border-radius: 20px;
+  background-color: greenyellow;
+}
+.newTask--text {
+  font-size: 22px;
+  color: #abadba;
+}
+
+.tasks {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.tasks--header {
+  font-size: 20px;
+  color: #abadba;
+  margin: 20px 0 20px 20px;
+}
+.task--body {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+  background-color: #5f6c90;
+  border-radius: 10px;
+}
+.task--status {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  border: 1px solid #555555;
+  margin: 12px;
+}
+.task--status:checked {
+  background: lightgreen;
+}
+.task--content {
+  margin: 12px;
+}
+.task--date {
+  margin: 12px;
+}
+.task--body-completed {
+  display: flex;
+  justify-content: space-between;
+  background-color: #363b74;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
